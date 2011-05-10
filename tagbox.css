@@ -1,0 +1,53 @@
+﻿/*
+*
+* jQuery Tag Box Widget Plugin v0.1
+* Author        : Khalid Al-Kooheji (http://kkdev.blogspot.com)
+* Version       : 0.1
+* Last Modified : 10/05/2011
+*
+* Copyright 2011, Khalid Al-Kooheji
+* Licensed under the MIT License (http://www.opensource.org/licenses/mit-license.php)
+*
+*/
+
+
+.tagbox 
+{
+    border:1px solid black;
+    display:block;
+    list-style:none;    
+    background-color:White;
+    padding: 1px 1px 2px 1px;
+    margin:0px;
+    cursor:text;
+}
+
+.tagbox li
+{
+        float:left;
+        padding:0px 0px 0px 2px;
+        margin-left: 2px;
+        margin-bottom:2px;
+        height:14px;
+}
+
+.tagbox li span
+{
+    float:left;
+    cursor:default;
+}
+
+.tagbox li div
+{
+    cursor:default;
+    display:inline-block;   
+    margin:0px; padding:0px;
+}
+    
+.tagbox input
+{
+    margin-left: 2px;
+    margin-top:1px;
+    border:none;
+    font-size:inherit;
+}

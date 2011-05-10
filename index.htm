@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link type="text/css" rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/themes/base/jquery-ui.css" />
+  <link type="text/css" rel="stylesheet" href="tagbox.css" />
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="jquery.tagbox.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#switcher').themeswitcher();
+      $('#taglist1').tagbox();
+      $('#taglist2').tagbox({ tagList: ["item1", "item2", "item3"] });
+      $('#taglist3').tagbox({ suggestionsSource: ["C", "C++", "C#", "Java", "Javascript", "Pascal"] });
+      $('#taglist4').tagbox({ formatter: function (val) {
+        return '<div style="background-color:#ff00ff;">' + val + '</div>';
+      } });
+    });
+  </script>
+</head>
+<body style="font-size:62.5%;">
+  <script type="text/javascript" src="http://jqueryui.com/themeroller/themeswitchertool/"></script>
+  <p>jQuery UI Theme Roller:</p>
+  <div id="switcher"></div><br />
+  <div class="ui-widget" style="width:400px;">
+    <div class="ui-widget-header">
+      Examples:
+    </div>
+    <div class="ui-widget-content" style="padding:4px;">
+    <p>Default: </p>
+    <ul id="taglist1" style="width:100%;"></ul><br />
+    <p>Initial list: </p>
+    <ul id="taglist2" style="width:100%;"></ul><br />
+    <p>With suggestions menu: (programming languages) </p>
+    <ul id="taglist3" style="width:100%;"></ul><br />
+    <p>Custom formatter: </p>
+    <ul id="taglist4" style="width:100%;"></ul><br />
+    </div>
+  </div>
+</body>
+</html>
