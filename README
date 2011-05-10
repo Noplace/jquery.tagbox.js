@@ -1,0 +1,33 @@
+jQuery Tag Box Widget Plugin
+Khalid Al-Kooheji (http://kkdev.blogspot.com)
+------------------------------------------------------------------------------
+Description:
+
+converts a list into a text box where a user can enter some tags and moves 
+around the tags or deletes them.
+tags are entered into the list by pressing space/enter.
+
+jquery.tagbox.js : javascript source code
+tagbox.css : basic styling
+
+------------------------------------------------------------------------------
+Usage :
+
+to create simply :
+	$('ul').tagbox();
+
+to get the tags as an array
+	var listOfTags = $('ul').tagbox('getTagList');
+
+------------------------------------------------------------------------------
+Options:
+
+suggestionsSource: if not null will be passed to jqueryui autocomplete plugin and 
+		   will allow suggestion dropdown menu as you type a new tag , default value : null
+
+allowDuplicates: allow duplicate tag entries , default value : false
+
+tagList: array of initial tags to be added , default value : null
+
+formatter: a function to format the item element default value : function (val) {  return '<span>' + val + '</span>';   }
+
